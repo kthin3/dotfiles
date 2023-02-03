@@ -12,6 +12,7 @@
 
 [core]
 	excludesfile = ~/.gitignore
+	editor = nano
 
 [alias]
 	ci = commit -a
@@ -88,3 +89,5 @@
 	cmd = git-nbmergetool merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [mergetool]
 	prompt = false
+[credential "https://github.com"]
+	helper = store --file=/tmp/tmpobs0eepk
